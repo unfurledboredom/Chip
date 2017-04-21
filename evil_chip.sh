@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Copyright 2017 Aminur Rahman
+
 networkInterface=wlan0
 dateAndTime="$(date)"
 currentMAC="$(ifconfig $networkInterface | grep HWaddr | awk '{print $5}')"
